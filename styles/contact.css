@@ -3,13 +3,15 @@
   padding: 0;
   font-family: "montserrat",sans-serif;
   box-sizing: border-box;
-}
-body{
-  background: #ddd;
-  min-height: 100vh;
+  }
 
-
+  body{
+    background-image: url(background.svg);
+	  background-color: #020011;
+	  background-position: center;
+	  background-attachment: fixed;
 }
+  
 .contact-info{
   display: flex;
   width: 100%;
@@ -26,7 +28,7 @@ body{
 
 
 .card{
-  background: #2f3542;
+  background: #13172c;
   padding: 0 20px;
   margin: 0 10px;
   width: calc(33% - 20px);
@@ -37,11 +39,13 @@ body{
   align-items: center;
   color: #fff;
   cursor: pointer;
+  opacity: 50;
 }
 
 .card a{
     text-decoration: none;
     color: #fff;
+    background: none;
 }
 
 .card-icon{
@@ -92,19 +96,19 @@ nav{
   display: flex;
 	height: 80px;
 	width: 100%;
-	background: #ddd;
+	background: none;
 	align-items: center;
 	justify-content: space-between;
 	padding: 0 50px 0 100px;
 	flex-wrap: wrap;
 }
 nav .logo{
-  color: #012E40;
+  color: #fff;
   font-size: 35px;
   font-weight: 600;
 }
 nav .logo span{
-    color: #015958;
+    color: #ffd000;
 }
 nav ul{
   display: flex;
@@ -115,7 +119,7 @@ nav ul li{
   margin: 0 5px;
 }
 nav ul li a{
-  color: #111;
+  color: #ffd000;
   text-decoration: none;
   font-size: 18px;
   font-weight: 500;
@@ -126,11 +130,10 @@ nav ul li a{
 }
 nav ul li a.active,
 nav ul li a:hover{
-  color: #111;
-  background: #fff;
+  color: #fff;
 }
 nav .menu-btn i{
-  color: #000;
+  color: #fff;
   font-size: 22px;
   cursor: pointer;
   display: none;
@@ -151,7 +154,7 @@ input[type="checkbox"]{
     display: block;
   }
   nav ul li a{
-		color: #fff;
+		color: #ffd000;
 	}
   #click:checked ~ .menu-btn i:before{
     content: "\f00d";
@@ -160,7 +163,7 @@ input[type="checkbox"]{
     position: fixed;
     top: 80px;
     left: -100%;
-    background: #111;
+    background: #020011;
     height: 100vh;
     width: 100%;
     text-align: center;
@@ -187,7 +190,7 @@ input[type="checkbox"]{
   nav ul li a.active,
   nav ul li a:hover{
     background: none;
-    color: darkred;
+    color: #fff;
   }
 }
 /* NAVBAR FINISHED */

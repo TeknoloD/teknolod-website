@@ -6,24 +6,31 @@
 	font-family: 'Poppins', sans-serif;
 }
 
+body{
+	background-image: url(background.svg);
+	background-color: #020011;
+	background-position: center;
+	background-attachment: fixed;
+}
+
 
 nav{
 	display: flex;
 	height: 80px;
 	width: 100%;
-	background: #ddd;
+	background: none;
 	align-items: center;
 	justify-content: space-between;
 	padding: 0 50px 0 100px;
 	flex-wrap: wrap;
   }
   nav .logo{
-	color: #012E40;
+	color: #fff;
 	font-size: 35px;
 	font-weight: 600;
   }
   nav .logo span{
-	  color: #015958;
+	  color: #ffd000;
   }
   nav ul{
 	display: flex;
@@ -34,7 +41,7 @@ nav{
 	margin: 0 5px;
   }
   nav ul li a{
-	color: #000;
+	color: #ffd000;
 	text-decoration: none;
 	font-size: 18px;
 	font-weight: 500;
@@ -45,11 +52,10 @@ nav{
   }
   nav ul li a.active,
   nav ul li a:hover{
-	color: #111;
-	background: #fff;
+	color: #fff;
   }
   nav .menu-btn i{
-	color: #000;
+	color: #fff;
 	font-size: 22px;
 	cursor: pointer;
 	display: none;
@@ -70,7 +76,7 @@ nav{
 	  display: block;
 	}
 	nav ul li a{
-		color: #fff;
+		color: #ffd000;
 	}
 	#click:checked ~ .menu-btn i:before{
 	  content: "\f00d";
@@ -79,7 +85,7 @@ nav{
 	  position: fixed;
 	  top: 80px;
 	  left: -100%;
-	  background: #111;
+	  background: #020011;
 	  height: 100vh;
 	  width: 100%;
 	  text-align: center;
@@ -106,7 +112,7 @@ nav{
 	nav ul li a.active,
 	nav ul li a:hover{
 	  background: none;
-	  color: darkred;
+	  color: #fff;
 	}
   }
 /* NAVBAR FINISHED */
@@ -115,7 +121,7 @@ nav{
 .section{
 	width: 100%;
 	min-height: 100vh;
-	background-color: #ddd;
+	background-color: none;
 }
 .container{
 	width: 80%;
@@ -127,6 +133,7 @@ nav{
 	float: left;
 	width: 50%;
 	margin-top: 10%;
+	color: #fff;
 }
 .image-section{
 	float: right;

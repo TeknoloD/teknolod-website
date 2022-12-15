@@ -4,26 +4,33 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-     font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background-image: url(background.svg);
+  background-color: #020011;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 nav{
     display: flex;
     height: 80px;
     width: 100%;
-    background: #f5f5f5;
+    background: none;
     align-items: center;
     justify-content: space-between;
     padding: 0 50px 0 100px;
     flex-wrap: wrap;
   }
   nav .logo{
-    color: #012E40;
+    color: #fff;
     font-size: 35px;
     font-weight: 600;
   }
   nav .logo span{
-      color: #015958;
+      color: #ffd000;
   }
   nav ul{
     display: flex;
@@ -34,7 +41,7 @@ nav{
     margin: 0 5px;
   }
   nav ul li a{
-    color: #000;
+    color: #ffd000;
     text-decoration: none;
     font-size: 18px;
     font-weight: 500;
@@ -45,11 +52,10 @@ nav{
   }
   nav ul li a.active,
   nav ul li a:hover{
-    color: #000;
-    background: #fff;
+    color: #fff;
   }
   nav .menu-btn i{
-    color: #000;
+    color: #fff;
     font-size: 22px;
     cursor: pointer;
     display: none;
@@ -73,7 +79,7 @@ nav{
       position: fixed;
       top: 80px;
       left: -100%;
-      background: #111;
+      background: #020011;
       height: 100vh;
       width: 100%;
       text-align: center;
@@ -100,7 +106,7 @@ nav{
     nav ul li a.active,
     nav ul li a:hover{
       background: none;
-      color: cyan;
+      color: #fff;
     }
   }
   /* NAVBAR FINISHED */
@@ -109,19 +115,19 @@ nav{
 .section{
 	width: 100%;
 	min-height: 100vh;
-	background-color: #ddd;
+	background-color: none;
 }
 
 .container {
     text-align: center;
-    background: #ddd;
+    background: none;
     width: 100%;
     height: 100vh;
 }
 
 .header {
     padding-top: 30px;
-    color: #033B3D;
+    color: #ffd000;
     font-size: 20px;
     margin: auto;
     line-height: 50px;
@@ -146,7 +152,7 @@ nav{
 }
 
 .teams:hover {
-    background: #fff;
+    background: #B2BEBF;
     border-radius: 12px;
 }
 
@@ -160,17 +166,18 @@ nav{
     font-weight: bold;
     font-size: 16px;
     text-transform: uppercase;
+    color: #fff;
 }
 
 .desig {
     font-style: italic;
-    color: #888;
+    color: #ffd000;
 }
 
 .about {
     margin: 20px 0;
     font-weight: lighter;
-    color: #4e4e4e;
+    color: #fff;
 }
 
 .social-links {
@@ -189,7 +196,7 @@ nav{
 }
 
 .social-links a i {
-    color: #000;
+    color: #fff;
 }
 
 @media screen and (max-width: 600px) {

@@ -6,28 +6,31 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
-body{
-    background-color: #ddd;
-}
 
+body{
+  background-image: url(background.svg);
+	background-color: #020011;
+	background-position: center;
+	background-attachment: fixed;
+}
 
 nav{
   display: flex;
 	height: 80px;
 	width: 100%;
-	background: #ddd;
+	background: none;
 	align-items: center;
 	justify-content: space-between;
 	padding: 0 50px 0 100px;
 	flex-wrap: wrap;
 }
 nav .logo{
-  color: #012E40;
+  color: #fff;
   font-size: 35px;
   font-weight: 600;
 }
 nav .logo span{
-    color: #015958;
+    color: #ffd000;
 }
 nav ul{
   display: flex;
@@ -38,7 +41,7 @@ nav ul li{
   margin: 0 5px;
 }
 nav ul li a{
-  color: #111;
+  color: #ffd000;
   text-decoration: none;
   font-size: 18px;
   font-weight: 500;
@@ -49,11 +52,10 @@ nav ul li a{
 }
 nav ul li a.active,
 nav ul li a:hover{
-  color: #111;
-  background: #fff;
+  color: #fff;
 }
 nav .menu-btn i{
-  color: #000;
+  color: #fff;
   font-size: 22px;
   cursor: pointer;
   display: none;
@@ -74,7 +76,7 @@ input[type="checkbox"]{
     display: block;
   }
   nav ul li a{
-		color: #fff;
+		color: #ffd000;
 	}
   #click:checked ~ .menu-btn i:before{
     content: "\f00d";
@@ -83,7 +85,7 @@ input[type="checkbox"]{
     position: fixed;
     top: 80px;
     left: -100%;
-    background: #111;
+    background: #020011;
     height: 100vh;
     width: 100%;
     text-align: center;
@@ -110,7 +112,7 @@ input[type="checkbox"]{
   nav ul li a.active,
   nav ul li a:hover{
     background: none;
-    color: darkred;
+    color: #fff;
   }
 }
 /* NAVBAR FINISHED */
@@ -133,7 +135,8 @@ input[type="checkbox"]{
   font-size: 3em;
   font-weight: bolder;
   padding-bottom: 10px;
-  border-bottom: 3px solid #222;
+  color: #fff;
+  border-bottom: 3px solid #fff;
 }
 
 .container .heading h3 span{
@@ -159,13 +162,14 @@ input[type="checkbox"]{
 
 .container .btn{
   margin: 40px 0 70px 0;
-  background: #222;
+  background: #fff;
   padding: 15px 40px ;
   border-radius: 5px;
 }
 
 .container .btn a{
- color: #fff;
+ color: #111;
+ background: #fff;
  font-size: 1.2em;
  text-decoration: none;
  font-weight: bolder;
